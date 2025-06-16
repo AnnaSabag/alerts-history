@@ -5,7 +5,7 @@ import pandas as pd
 url = "https://alerts-history.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx"
 params = {
     "lang": "he",
-    "fromDate": "07.10.2023",  # You can adjust the date
+    "fromDate": "07.10.2023",
     "toDate": "30.10.2023",
     "mode": "0"
 }
