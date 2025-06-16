@@ -23,9 +23,9 @@ if response.status_code == 200 and response.text.strip():
         data = response.json()
         df = pd.DataFrame(data)
         print(df)
-        df.to_excel("OREF_Alarms_History.xlsx", index=False, engine='openpyxl')
-        print("✅ Alerts saved to 'OREF_Alarms_History.xlsx'")
+        df.to_excel("Alerts_History.xlsx", index=False, engine='openpyxl')
+        print("Alerts saved to 'Alerts_History.xlsx'")
     except Exception as e:
-        print("⚠️ Failed to parse JSON:", e)
+        print("Failed to parse JSON:", e)
 else:
-    print(f"❌ Request failed: {response.status_code}")
+    print(f"Request failed: {response.status_code}")
